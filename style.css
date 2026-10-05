@@ -3,22 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 html {
     scroll-behavior: smooth;
 }
-
 body {
     font-family: 'Inter', sans-serif;
     background: #08090d;
     color: #ffffff;
 }
-
 a {
     text-decoration: none;
     color: inherit;
 }
-
 header {
     width: 100%;
     position: absolute;
@@ -26,58 +22,47 @@ header {
     left: 0;
     z-index: 10;
 }
-
 .navbar {
     max-width: 1200px;
     margin: auto;
     padding: 28px 30px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .logo {
     font-size: 24px;
     font-weight: 800;
     letter-spacing: -1px;
 }
-
 .logo span {
     color: #7c5cff;
 }
-
 .menu {
     display: flex;
     gap: 35px;
 }
-
 .menu a {
     color: #999ba5;
     font-size: 14px;
     transition: 0.3s;
 }
-
 .menu a:hover {
     color: #ffffff;
 }
-
 .inicio {
     min-height: 100vh;
     max-width: 1200px;
     margin: auto;
     padding: 150px 30px 100px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 80px;
 }
-
 .inicio-texto {
     max-width: 650px;
 }
-
 .subtitulo {
     color: #8c72ff;
     font-size: 12px;
@@ -85,18 +70,15 @@ header {
     letter-spacing: 3px;
     margin-bottom: 25px;
 }
-
 .inicio h1 {
     font-size: clamp(50px, 7vw, 85px);
     line-height: 0.98;
     letter-spacing: -5px;
     margin-bottom: 30px;
 }
-
 .inicio h1 span {
     color: #8c72ff;
 }
-
 .descricao {
     max-width: 530px;
     color: #92949d;
@@ -104,63 +86,47 @@ header {
     font-size: 16px;
     margin-bottom: 35px;
 }
-
 .botao {
     display: inline-flex;
     align-items: center;
     gap: 20px;
-
     padding: 15px 22px;
-
     background: #ffffff;
     color: #08090d;
-
     font-size: 14px;
     font-weight: 700;
-
     border-radius: 8px;
-
     transition: 0.3s;
 }
-
 .botao:hover {
     transform: translateY(-3px);
     background: #8c72ff;
     color: #ffffff;
 }
-
 .botao span {
     font-size: 18px;
 }
-
 .inicio-visual {
     width: 350px;
     height: 350px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     border: 1px solid #20222b;
     border-radius: 30px;
-
-    background:
-        radial-gradient(circle at center, #17142a 0%, #0b0c11 65%);
+    background: radial-gradient(circle at center, #17142a 0%, #0b0c11 65%);
+    overflow: hidden;
+    flex-shrink: 0;
 }
-
-.codigo {
-    font-size: 38px;
-    color: #555866;
+.foto-perfil {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
-
-.codigo strong {
-    color: #8c72ff;
-}
-
 .titulo-secao {
     margin-bottom: 55px;
 }
-
 .titulo-secao p {
     color: #8c72ff;
     font-size: 11px;
@@ -168,50 +134,40 @@ header {
     letter-spacing: 3px;
     margin-bottom: 12px;
 }
-
 .titulo-secao h2 {
     font-size: 45px;
     letter-spacing: -2px;
     margin-bottom: 12px;
 }
-
 .titulo-secao span {
     color: #777983;
     font-size: 14px;
 }
-
 .projetos {
     max-width: 1200px;
     margin: auto;
     padding: 100px 30px;
 }
-
 .projetos-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
 }
-
 .card {
     overflow: hidden;
-
     background: #0f1016;
     border: 1px solid #20222b;
     border-radius: 15px;
-
     transition: 0.3s;
 }
-
 .card:hover {
     transform: translateY(-6px);
     border-color: #51428c;
 }
-
 .card-imagem {
     height: 230px;
     overflow: hidden;
 }
-
 .card-imagem img {
     width: 100%;
     height: 100%;
@@ -219,203 +175,152 @@ header {
     display: block;
     transition: 0.4s;
 }
-
 .card:hover .card-imagem img {
     transform: scale(1.05);
 }
-
 .sgfel {
     height: 100%;
-
     display: flex;
     align-items: flex-end;
-
     padding: 25px;
-
     background: linear-gradient(135deg, #171421, #251d35);
 }
-
 .sgfel span {
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 3px;
     color: #ffffff;
 }
-
 .card-conteudo {
     padding: 25px;
 }
-
 .card-topo {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     margin-bottom: 15px;
 }
-
 .card h3 {
     font-size: 20px;
 }
-
 .numero {
     color: #555762;
     font-size: 12px;
     font-weight: 700;
 }
-
 .card p {
     color: #858792;
     font-size: 14px;
     line-height: 1.6;
-
     min-height: 68px;
 }
-
 .tecnologias {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-
     margin: 20px 0;
 }
-
 .tecnologias span {
     padding: 7px 10px;
-
     border-radius: 5px;
-
     background: #191a22;
-
     color: #92949e;
-
     font-size: 11px;
 }
-
 .links {
     display: flex;
     gap: 20px;
-
     padding-top: 18px;
-
     border-top: 1px solid #20222b;
 }
-
 .links a {
     font-size: 13px;
     font-weight: 600;
-
     color: #ffffff;
-
     transition: 0.3s;
 }
-
 .links a:hover {
     color: #8c72ff;
 }
-
 .links .github {
     color: #70727d;
 }
-
 .links .indisponivel {
     color: #555762;
 }
-
 .sobre {
     padding: 100px 30px;
-
     background: #0c0d12;
     border-top: 1px solid #191a20;
     border-bottom: 1px solid #191a20;
 }
-
 .sobre-conteudo {
     max-width: 900px;
     margin: auto;
 }
-
 .sobre-conteudo > p {
     color: #858792;
     line-height: 1.8;
     font-size: 16px;
     margin-bottom: 35px;
 }
-
 .tecnologias-grandes {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
-
 .tecnologias-grandes span {
     padding: 12px 16px;
-
     border: 1px solid #292b35;
     border-radius: 7px;
-
     color: #aaaab2;
     font-size: 13px;
 }
-
 footer {
     padding: 35px 30px;
-
     text-align: center;
-
     color: #555762;
     font-size: 12px;
 }
-
 @media (max-width: 800px) {
-
     .menu {
         display: none;
     }
-
     .inicio {
         flex-direction: column;
         align-items: flex-start;
         padding-top: 130px;
     }
-
     .inicio-visual {
         width: 100%;
-        height: 250px;
+        height: 350px;
     }
-
     .projetos-grid {
         grid-template-columns: 1fr;
     }
-
     .inicio h1 {
         letter-spacing: -3px;
     }
-
 }
-
 @media (max-width: 500px) {
-
     .navbar {
         padding: 22px 20px;
     }
-
     .inicio,
     .projetos {
         padding-left: 20px;
         padding-right: 20px;
     }
-
     .inicio h1 {
         font-size: 48px;
     }
-
     .titulo-secao h2 {
         font-size: 36px;
     }
-
     .card-imagem {
         height: 190px;
     }
-
+    .inicio-visual {
+        height: 300px;
+    }
 }
